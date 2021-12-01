@@ -5,4 +5,14 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="InputFiles\Dec01Part01.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="InputFiles\Dec01Part01.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
