@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2021.Solutions
 {
-    public class Dec01 : ISolution, IPart1Solution<string>, IPart2Solution<string>
+    public class Dec01 : IPart1Solution<string>, IPart2Solution<string>
     {
         List<string> inputFile;
         public string InputFileName { get; set; }
