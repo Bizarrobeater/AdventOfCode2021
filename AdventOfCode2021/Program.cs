@@ -7,8 +7,8 @@ namespace AdventOfCode2021
     {
         static void Main(string[] args)
         {
-            var sol = new Dec01();
-            sol.SetPart02("Dec01Part01");
+            var sol = new Dec02();
+            sol.SetPart02("Dec02Part01");
             Console.WriteLine(sol.Part02Solution());
         }
     }
