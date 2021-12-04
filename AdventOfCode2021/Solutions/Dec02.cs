@@ -9,8 +9,6 @@ namespace AdventOfCode2021.Solutions
     public class Dec02 : IPart1Solution<string>, IPart2Solution<string>
     {
         private List<string> inputFile;
-        public string InputFileName { get; set; }
-
         public string Part01Solution()
         {
             int horizontal = 0;
@@ -77,8 +75,7 @@ namespace AdventOfCode2021.Solutions
 
         public void SetPart01(string inputFileName)
         {
-            InputFileName = inputFileName;
-            inputFile = ReadInputFiles.SimpleReadPerLine(InputFileName);
+            inputFile = ReadInputFiles.SimpleReadPerLine(inputFileName);
         }
 
         public void SetPart02(string inputFileName)

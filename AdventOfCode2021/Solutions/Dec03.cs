@@ -9,8 +9,6 @@ namespace AdventOfCode2021.Solutions
     public class Dec03 : IPart1Solution<int>, IPart2Solution<int>
     {
         List<int[]> inputFile;
-        public string InputFileName { get; set; }
-
         public int Part01Solution()
         {
             int listLength = inputFile.Count;
@@ -93,8 +91,6 @@ namespace AdventOfCode2021.Solutions
                 }
             }
 
-            var stringViev = string.Join("", inUse[0]);
-
             return Convert.ToInt32(string.Join("", inUse[0]), 2);
         }
 
@@ -142,7 +138,6 @@ namespace AdventOfCode2021.Solutions
                     break;
                 }
             }
-            var stringViev = string.Join("", inUse[0]);
 
             return Convert.ToInt32(string.Join("", inUse[0]), 2);
         }

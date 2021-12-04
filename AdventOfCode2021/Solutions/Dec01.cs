@@ -9,7 +9,6 @@ namespace AdventOfCode2021.Solutions
     public class Dec01 : IPart1Solution<string>, IPart2Solution<string>
     {
         List<string> inputFile;
-        public string InputFileName { get; set; }
 
         public string Part01Solution()
         {
@@ -26,7 +25,7 @@ namespace AdventOfCode2021.Solutions
 
         public string Part02Solution()
         {
-            List<int> newList = new List<int>();
+            List<int> newList = new();
 
             for (int i = 0; i < inputFile.Count - 2; i++)
             {
@@ -48,8 +47,7 @@ namespace AdventOfCode2021.Solutions
 
         public void SetPart01(string inputFileName)
         {
-            InputFileName = inputFileName;
-            inputFile = ReadInputFiles.SimpleReadPerLine(InputFileName);
+            inputFile = ReadInputFiles.SimpleReadPerLine(inputFileName);
         }
 
         public void SetPart02(string inputFileName)

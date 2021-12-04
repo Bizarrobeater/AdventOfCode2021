@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2021.Solutions
 {
-    public interface IPart1Solution<T> : ISolution
+    public interface IPart1Solution<T>
     {
         public T Part01Solution();
         public void SetPart01(string inputFileName);
