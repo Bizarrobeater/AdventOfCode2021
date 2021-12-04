@@ -20,6 +20,9 @@ namespace AdventOfCode2021
             return result;
         }
 
-
+        public static string ReadAllAsString(string fileName)
+        {
+            return File.ReadAllText($"InputFiles\\{fileName}.txt");
+        }
     }
 }
