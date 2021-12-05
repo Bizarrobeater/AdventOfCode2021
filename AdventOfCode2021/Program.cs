@@ -7,26 +7,28 @@ namespace AdventOfCode2021
     {
         static void Main(string[] args)
         {
-            //RunPart1<Dec04, int>("04","01");
-            RunPart2<Dec04, int>("04","01");
+            RunPart1<Dec05, int>(true);
+            RunPart2<Dec05, int>(false);
         }
 
-        private static void RunPart1<T, U>(string fileDay, string filePart, bool useFile = true) where T: IPart1Solution<U>, new()
+        private static void RunPart1<T, U>(bool testRun, bool useFile = true) where T: BaseSolution, IPart1Solution<U>,  new()
         {
             var sol = new T();
+            sol.Test = testRun;
             if (useFile)
             {
-                sol.SetPart01($"Dec{fileDay}Part{filePart}");
+                sol.SetPart01();
             }
             Console.WriteLine(sol.Part01Solution());
         }
 
-        private static void RunPart2<T, U>(string fileDay, string filePart, bool useFile = true) where T: IPart2Solution<U>, new()
+        private static void RunPart2<T, U>(bool testRun, bool useFile = true) where T: BaseSolution, IPart2Solution<U>, new()
         {
             var sol = new T();
+            sol.Test = testRun;
             if (useFile)
             {
-                sol.SetPart02($"Dec{fileDay}Part{filePart}");
+                sol.SetPart02();
             }
             Console.WriteLine(sol.Part02Solution());
         }

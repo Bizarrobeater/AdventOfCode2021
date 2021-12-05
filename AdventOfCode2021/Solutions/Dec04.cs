@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2021.Solutions
 {
-    public partial class Dec04: IPart1Solution<int>, IPart2Solution<int>
+    public partial class Dec04 : BaseSolution, IPart1Solution<int>, IPart2Solution<int>
     {
         int[] bingoNumbers;
 
         List<BingoPlate> bingoPlates;
 
+        public override DayEnum Day => DayEnum.Dec04;
+
         public Dec04()
         {
             bingoPlates = new List<BingoPlate>();
         }
+
+
 
         public int Part01Solution()
         {
@@ -68,9 +72,9 @@ namespace AdventOfCode2021.Solutions
             return -1;
         }
 
-        public void SetPart01(string inputFileName)
+        public void SetPart01()
         {
-            string all = ReadInputFiles.ReadAllAsString(inputFileName);
+            string all = ReadInputFiles.ReadAllAsString(Part1FileName);
 
             string[] split = all.Split($"{Environment.NewLine}{Environment.NewLine}");
 
@@ -89,9 +93,9 @@ namespace AdventOfCode2021.Solutions
             }
         }
 
-        public void SetPart02(string inputFileName)
+        public void SetPart02()
         {
-            SetPart01(inputFileName);
+            SetPart01();
         }
     }
 }

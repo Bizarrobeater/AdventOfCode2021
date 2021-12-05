@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2021.Solutions
 {
-    public interface IPart1Solution<T> : ISolution
+    public interface ISolution
     {
-        public T Part01Solution();
-        public void SetPart01();
+        DayEnum Day { get; }
+
+        bool Test { get; set; }
     }
 }

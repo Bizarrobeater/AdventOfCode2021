@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2021.Solutions
 {
-    public class Dec03 : IPart1Solution<int>, IPart2Solution<int>
+    public class Dec03 : BaseSolution, IPart1Solution<int>, IPart2Solution<int>
     {
         List<int[]> inputFile;
+
+        public override DayEnum Day => DayEnum.Dec03;
+
         public int Part01Solution()
         {
             int listLength = inputFile.Count;
@@ -142,9 +145,9 @@ namespace AdventOfCode2021.Solutions
             return Convert.ToInt32(string.Join("", inUse[0]), 2);
         }
 
-        public void SetPart01(string inputFileName)
+        public void SetPart01()
         {
-            var temp = ReadInputFiles.SimpleReadPerLine(inputFileName);
+            var temp = ReadInputFiles.SimpleReadPerLine(Part1FileName);
             inputFile = new List<int[]>();
 
             int[] part;
@@ -161,9 +164,9 @@ namespace AdventOfCode2021.Solutions
             }
         }
 
-        public void SetPart02(string inputFileName)
+        public void SetPart02()
         {
-            SetPart01(inputFileName);
+            SetPart01();
         }
     }
 }

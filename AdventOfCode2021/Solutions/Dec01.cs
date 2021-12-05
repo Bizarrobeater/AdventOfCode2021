@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace AdventOfCode2021.Solutions
 {
-    public class Dec01 : IPart1Solution<string>, IPart2Solution<string>
+    public class Dec01 : BaseSolution, IPart1Solution<string>, IPart2Solution<string>
     {
         List<string> inputFile;
+
+        public override DayEnum Day => DayEnum.Dec01;
 
         public string Part01Solution()
         {
@@ -45,14 +47,14 @@ namespace AdventOfCode2021.Solutions
             return counter.ToString();
         }
 
-        public void SetPart01(string inputFileName)
+        public void SetPart01()
         {
-            inputFile = ReadInputFiles.SimpleReadPerLine(inputFileName);
+            inputFile = ReadInputFiles.SimpleReadPerLine(Part1FileName);
         }
 
-        public void SetPart02(string inputFileName)
+        public void SetPart02()
         {
-            SetPart01(inputFileName);
+            SetPart02();
         }
     }
 }
