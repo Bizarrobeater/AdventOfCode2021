@@ -147,7 +147,7 @@ namespace AdventOfCode2021.Solutions
 
         public void SetPart01()
         {
-            var temp = ReadInputFiles.SimpleReadPerLine(Part1FileName);
+            var temp = ReadInputFiles.SimpleReadPerLine(Part01FileName);
             inputFile = new List<int[]>();
 
             int[] part;

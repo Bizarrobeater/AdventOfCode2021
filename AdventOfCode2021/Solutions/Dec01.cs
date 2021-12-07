@@ -49,7 +49,7 @@ namespace AdventOfCode2021.Solutions
 
         public void SetPart01()
         {
-            inputFile = ReadInputFiles.SimpleReadPerLine(Part1FileName);
+            inputFile = ReadInputFiles.SimpleReadPerLine(Part01FileName);
         }
 
         public void SetPart02()

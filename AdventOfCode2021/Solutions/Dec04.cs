@@ -74,7 +74,7 @@ namespace AdventOfCode2021.Solutions
 
         public void SetPart01()
         {
-            string all = ReadInputFiles.ReadAllAsString(Part1FileName);
+            string all = ReadInputFiles.ReadAllAsString(Part01FileName);
 
             string[] split = all.Split($"{Environment.NewLine}{Environment.NewLine}");
 

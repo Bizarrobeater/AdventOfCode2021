@@ -7,8 +7,8 @@ namespace AdventOfCode2021
     {
         static void Main(string[] args)
         {
-            //RunPart1<Dec06, long>(false);
-            RunPart2<Dec06, long>(false);
+            //RunPart1<Dec07, int>(false);
+            RunPart2<Dec07, long>(false);
         }
 
         private static void RunPart1<T, U>(bool testRun, bool useFile = true) where T: BaseSolution, IPart1Solution<U>,  new()

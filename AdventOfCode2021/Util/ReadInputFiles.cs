@@ -24,5 +24,10 @@ namespace AdventOfCode2021
         {
             return File.ReadAllText($"InputFiles\\{fileName}.txt");
         }
+
+        public static string InputOneLine(string fileName)
+        {
+            return SimpleReadPerLine(fileName)[0];
+        }
     }
 }

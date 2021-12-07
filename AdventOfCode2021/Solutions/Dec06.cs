@@ -99,7 +99,7 @@ namespace AdventOfCode2021.Solutions
 
         public void SetPart01()
         {
-            var list = ReadInputFiles.SimpleReadPerLine(Part1FileName);
+            var list = ReadInputFiles.SimpleReadPerLine(Part01FileName);
             var listFishString = list[0].Split(',');
             startFish = new List<int>();
 

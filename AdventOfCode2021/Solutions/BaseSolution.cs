@@ -12,7 +12,7 @@ namespace AdventOfCode2021.Solutions
 
         public bool Test { get; set; }
 
-        public string Part1FileName
+        public string Part01FileName
         {
             get
             {
@@ -20,7 +20,7 @@ namespace AdventOfCode2021.Solutions
                 return $"{Day}Part01{testPart}";
             }
         }
-        public string Part2FileName
+        public string Part02FileName
         {
             get
             {
